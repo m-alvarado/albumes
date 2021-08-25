@@ -1,0 +1,51 @@
+@use '../../abstracts' as *;
+
+.right{
+    @include center(center, center, column);
+
+    p.sing-up{
+    @include font-style($bold, 1.8rem)
+    }
+    form{
+    width: 80%;
+    height: auto;
+    padding: 1.5rem 1rem;
+    @include center(space-around, center, column);
+
+    input{
+        width: 55%;
+        height: 3.5rem;
+        border: 0;
+        outline: none;
+        background-color: $light;
+        border-radius: 2rem;
+        margin: .8rem 0;
+        text-align: center;
+        @include font-style($regular, 20px);
+        &[type="submit"]{
+            height: 2.5rem;
+            width: 30%;
+            cursor: pointer;
+            @include font-style($semi-bold, 20px);
+            background-color: $primary;
+            color:$white;
+            outline: 3px solid $primary;
+            outline-offset: -3px;
+            &:hover{
+                transition: .4s cubic-bezier(.46,.02,.31,.99);
+                outline-offset: 3px;
+                
+            }
+        }
+    }
+
+    }
+    p.log-in{
+        @include font-style($f-light, 1rem);
+        color:$dark-grey;
+        span{
+            color:$secondary;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+//Center
+@mixin center($jus-cont, $align-items, $flex-dir){
+    display: flex;
+    justify-content: $jus-cont;
+    align-items: $align-items;
+    flex-direction: $flex-dir;
+}

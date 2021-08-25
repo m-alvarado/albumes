@@ -1,0 +1,42 @@
+@use '../../abstracts' as *;
+.left{
+    color:$white;
+    @include center(center, center, row);
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+    .age{
+        width: 100%;
+        height: 90%;
+        padding: 1rem 1rem;
+        @include center(space-between, left, column);
+
+        svg path{
+            fill:$white;
+        }
+        .slogan{
+            @include font-style($extra-bold, 3rem);
+            text-align: center;
+            width: 60%;
+            color:$primary;
+        }
+        .social{
+            width: 60%;
+            i{
+                font-size: 2rem;
+                margin-right: .6rem;
+                cursor: pointer;
+            }
+            i.fa-facebook{
+                color: $primary;
+            }
+            p{
+                @include font-style($medium, 20px);
+            }
+        }
+    }
+}

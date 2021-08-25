@@ -1,0 +1,16 @@
+@use '../../../abstracts' as *;
+
+@media only screen and (max-device-width:600px){
+    #left{
+        .age{
+            @include center(space-between, center, column);
+        }
+        .social, svg{
+            z-index: 150;
+            color: $primary;
+        }
+        svg path{
+            fill: $primary;
+        }
+    }
+}

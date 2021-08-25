@@ -1,0 +1,8 @@
+@use '../../../abstracts' as *;
+
+@media only screen and (max-device-width:600px){
+    #right{
+        z-index: 100;
+        background-color: $white;
+    }
+}
