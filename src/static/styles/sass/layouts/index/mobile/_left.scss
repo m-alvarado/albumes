@@ -1,16 +1,32 @@
 @use '../../../abstracts' as *;
 
-@media only screen and (max-device-width:600px){
+@media screen and (max-width:$smll){
     #left{
         .age{
             @include center(space-between, center, column);
+            padding: 0;
         }
-        .social, svg{
+        .social{
+            @include center(center, center, column);
+            position: absolute;
+            bottom: 0;
             z-index: 150;
-            color: $primary;
+            a{
+                color:$primary;
+                font-size: 20px;
+                i.fa-facebook{
+                    color: $dark-grey;
+                }
+            }
+            p{
+                color: $dark-grey;
+                @include font-style($regular, 16px)
+            }
         }
-        svg path{
+
+        svg, svg path{
             fill: $primary;
+            z-index: 150;
         }
     }
 }

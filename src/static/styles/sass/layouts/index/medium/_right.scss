@@ -1,0 +1,13 @@
+@use '../../../abstracts' as *;
+
+@media screen and (max-width:$md){
+    #right{
+        input{
+            width: 80%;
+
+        }
+        input[type="submit"]{
+            width: 40%;
+        }
+    }
+}

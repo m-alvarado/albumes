@@ -19,23 +19,28 @@
             fill:$white;
         }
         .slogan{
-            @include font-style($extra-bold, 3rem);
+            @include font-style($extra-bold, $h1);
             text-align: center;
             width: 60%;
             color:$primary;
         }
         .social{
             width: 60%;
+            a{
+                color: $white;
+                font-style: normal;
+                text-decoration: none;
+            }
             i{
-                font-size: 2rem;
-                margin-right: .6rem;
+                font-size: $h2;
+                margin-right: .5rem;
                 cursor: pointer;
             }
             i.fa-facebook{
                 color: $primary;
             }
             p{
-                @include font-style($medium, 20px);
+                @include font-style($medium, $h4);
             }
         }
     }

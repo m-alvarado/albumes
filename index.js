@@ -4,7 +4,7 @@ const app = express()
 
 //Server config
 
-app.set('views', './src/views')
+app.set('views', './src/views/')
 //Declaramos que prepro de html vamos a usar
 app.set('view engine', 'ejs')
 //Declaramos donde va a estar las hojas de estilo/imagenes
@@ -18,5 +18,5 @@ app.listen('8000', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.render('index.ejs')
+    res.render('home.ejs')
 })

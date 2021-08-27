@@ -29,7 +29,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 46px;
   text-align: center;
   width: 60%;
   color: #0ABDE3;
@@ -37,9 +37,14 @@
 .left .age .social {
   width: 60%;
 }
+.left .age .social a {
+  color: #FFF;
+  font-style: normal;
+  text-decoration: none;
+}
 .left .age .social i {
-  font-size: 2rem;
-  margin-right: 0.6rem;
+  font-size: 32px;
+  margin-right: 0.5rem;
   cursor: pointer;
 }
 .left .age .social i.fa-facebook {
@@ -49,7 +54,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .right {
@@ -62,19 +67,20 @@
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 32px;
+  margin: 16px;
 }
 .right form {
   width: 80%;
   height: auto;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 .right form input {
-  width: 55%;
+  width: 65%;
   height: 3.5rem;
   border: 0;
   outline: none;
@@ -85,7 +91,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 16px;
 }
 .right form input[type=submit] {
   height: 2.5rem;
@@ -94,7 +100,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 20px;
+  font-size: 22px;
   background-color: #0ABDE3;
   color: #FFF;
   outline: 3px solid #0ABDE3;
@@ -108,36 +114,66 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 16px;
   color: #868686;
+}
+.right p.log-in a {
+  text-decoration: none;
 }
 .right p.log-in span {
   color: #DF558A;
   cursor: pointer;
 }
 
-@media only screen and (max-device-width: 600px) {
+@media screen and (max-width: 700px) {
   #left .age {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding: 0;
   }
-  #left .social, #left svg {
+  #left .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
     z-index: 150;
-    color: #0ABDE3;
   }
-  #left svg path {
+  #left .social a {
+    color: #0ABDE3;
+    font-size: 20px;
+  }
+  #left .social a i.fa-facebook {
+    color: #868686;
+  }
+  #left .social p {
+    color: #868686;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+  #left svg, #left svg path {
     fill: #0ABDE3;
+    z-index: 150;
   }
 }
-@media only screen and (max-device-width: 600px) {
+@media screen and (max-width: 700px) {
   #right {
     z-index: 100;
     background-color: #FFF;
   }
+  #right form input {
+    width: 100%;
+  }
+  #right form input[type=submit] {
+    width: 40%;
+  }
 }
-@media only screen and (max-device-width: 600px) {
+@media (max-width: 700px) {
   #container {
     display: block;
   }
@@ -150,6 +186,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 950px) {
+  #left p.slogan {
+    font-size: 2.3rem;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #right input {
+    width: 80%;
+  }
+  #right input[type=submit] {
+    width: 40%;
   }
 }
 .container {

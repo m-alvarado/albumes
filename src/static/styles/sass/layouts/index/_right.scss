@@ -4,16 +4,17 @@
     @include center(center, center, column);
 
     p.sing-up{
-    @include font-style($bold, 1.8rem)
+    @include font-style($bold, $h2);
+    margin:$h4;
     }
     form{
     width: 80%;
     height: auto;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     @include center(space-around, center, column);
 
     input{
-        width: 55%;
+        width: 65%;
         height: 3.5rem;
         border: 0;
         outline: none;
@@ -21,12 +22,12 @@
         border-radius: 2rem;
         margin: .8rem 0;
         text-align: center;
-        @include font-style($regular, 20px);
+        @include font-style($regular, $h4);
         &[type="submit"]{
             height: 2.5rem;
             width: 30%;
             cursor: pointer;
-            @include font-style($semi-bold, 20px);
+            @include font-style($semi-bold, $h3);
             background-color: $primary;
             color:$white;
             outline: 3px solid $primary;
@@ -41,8 +42,11 @@
 
     }
     p.log-in{
-        @include font-style($f-light, 1rem);
+        @include font-style($f-light, $h4);
         color:$dark-grey;
+        a{
+            text-decoration: none;
+        }
         span{
             color:$secondary;
             cursor: pointer;
