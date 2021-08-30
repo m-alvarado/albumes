@@ -1,2 +1,25 @@
+@use '../../abstracts' as *;
 @forward './nav';
+@forward './main';
+@forward './album';
 @forward './mobile';
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.logo{
+    position: fixed;
+    top: 3vh;
+    right: 3vh;
+    z-index: 150;
+}
+.nav{
+    background-color: $white;
+}
+.main{
+    background-color: $light;
+    width: 80%;
+}
+

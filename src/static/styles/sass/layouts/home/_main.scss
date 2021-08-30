@@ -1,0 +1,45 @@
+@use '../../abstracts' as *;
+
+.main{
+    @include center(center, center, column);
+    position: relative
+}
+
+.album-top{
+    @include font-style($bold, $h1);
+    @include center(center, center, column);
+    p.album-name{
+        margin-top:0;
+        margin-bottom: .3rem;
+    }
+    svg.album-link{
+        width: 25px;
+        height: auto;
+        cursor: pointer;
+    }
+}
+.add-remove{
+    width: 10%;
+    height: 30vh;
+    position: absolute;
+    top:37%;
+    right:2.5rem;
+    @include center(center, center, column);
+    & :is(.add-pic, .del-pic){
+        margin: .5rem 0;
+        @include center(center, center, column);
+        @include font-style($regular, $h5);
+        color:$dark-grey;
+        svg path{
+            fill: $dark-grey;
+            cursor: pointer;
+        }
+        &:hover{
+            svg path{
+                fill: $black;
+            }
+        }
+    }
+}
+
+

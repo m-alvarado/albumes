@@ -1,0 +1,13 @@
+@use '../../abstracts' as *;
+
+
+.album{
+    width: 70%;
+    height: 75vh;
+    background-color: blue;
+    padding-top: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+

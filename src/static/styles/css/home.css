@@ -1,3 +1,231 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.nav {
+  width: 20%;
+  background-color: #FFF;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.user {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.user p.username {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+}
+.user .search {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  background-color: #F9F9F9;
+  border: 0;
+  border-radius: 20px;
+}
+.user .search label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #868686;
+}
+.user .search label svg {
+  width: 20px;
+  height: auto;
+}
+.user .search input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 70;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #343a40;
+}
+
+.nav-bottom {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.album-list {
+  width: 80%;
+  height: auto;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.album-list p.album-name {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+}
+.album-list svg.trash {
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+}
+.album-list:hover {
+  background-color: #F9F9F9;
+}
+
+.create-album {
+  width: 80%;
+  height: auto;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.create-album p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #868686;
+}
+.create-album svg {
+  cursor: pointer;
+  width: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.album-top {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.album-top p.album-name {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+.album-top svg.album-link {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.add-remove {
+  width: 10%;
+  height: 30vh;
+  position: absolute;
+  top: 37%;
+  right: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.add-remove :is(.add-pic, .del-pic) {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #868686;
+}
+.add-remove :is(.add-pic, .del-pic) svg path {
+  fill: #868686;
+  cursor: pointer;
+}
+.add-remove :is(.add-pic, .del-pic):hover svg path {
+  fill: #343a40;
+}
+
+.album {
+  width: 70%;
+  height: 75vh;
+  background-color: blue;
+  padding-top: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.logo {
+  position: fixed;
+  top: 3vh;
+  right: 3vh;
+  z-index: 150;
+}
+
+.nav {
+  background-color: #FFF;
+}
+
+.main {
+  background-color: #F9F9F9;
+  width: 80%;
+}
 
 /*# sourceMappingURL=home.css.map */
