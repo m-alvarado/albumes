@@ -1,0 +1,15 @@
+@use '../../../abstracts' as *;
+@forward './left';
+@forward './right';
+
+@media (max-width:$smll){
+    #container{
+        display: block;
+    }
+    #left, #right{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        @include center(center, center, column);
+    }
+}

@@ -1,0 +1,18 @@
+@use '../../abstracts' as *;
+@forward './left';
+@forward './right';
+@forward './mobile';
+@forward './medium';
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    @include center(center, center, row)
+}
+.left, .right{
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    
+}

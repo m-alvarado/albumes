@@ -1,0 +1,14 @@
+@use '../../../abstracts' as *;
+
+@media screen and (max-width:$smll){
+    #right{
+        z-index: 100;
+        background-color: $white;
+        form input{
+            width: 100%;
+        }
+        form input[type="submit"]{
+            width: 40%;
+        }
+    }
+}
