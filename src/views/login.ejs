@@ -37,13 +37,13 @@
             </div>
         </div>
         <div class="right" id='right'>
-            <p class="sing-up">Log in.</p>
-            <form action="" method="POST">
-                <input type="text" placeholder="Email or Username">
-                <input type="password" placeholder="Password">
+            <p class="sing-up">Log In.</p>
+            <form action="/login" method="POST">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
                 <input type="submit" value="Log in">
             </form>
-            <p class="log-in">New to this site?<span>Sing up</span>.</p>
+            <p class="log-in">New to this site?<a href="/register"><span>Sing up</span></a>.</p>
         </div>
     </div>
 </body>

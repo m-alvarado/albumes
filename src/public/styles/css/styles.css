@@ -218,3 +218,37 @@
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+
+
+
+
+
+
+.alert{
+  width: 150px;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: .3rem;
+  right: -250px;
+  background-color: red;
+  padding: 1rem 2rem;
+  border-radius:5px;
+  font-size: 1.5rem;
+  color: #FFF;
+  z-index:1300;
+  animation: alerta .7s ease-in-out;
+}
+@keyframe alerta{
+  from{
+      right:-250px;
+  }
+  to{
+      right:.3rem;
+  }
+}
+
+
+
+

@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="/styles/css/styles.css">
     <link rel="stylesheet" href="/styles/css/normalize.css">
     <script src="https://kit.fontawesome.com/9ec8210292.js" crossorigin="anonymous"></script>
+    <style>
+        .alert{
+            width: 150px;
+            height: auto;
+            font-family: "Poppins", sans-serif;
+            position: fixed;
+            top: .3rem;
+            right: -250px;
+            background-color: red;
+            padding: 1rem 2rem;
+            border-radius:5px;
+            font-size: 1.5rem;
+            color: #FFF;
+            z-index:1300;
+            animation: alerta 3.7s ease-in-out;
+            animation-delay: .3s;
+        }
+        @keyframes alerta{
+            0%{right:-250px;}
+            30%{right:.3rem;}
+            80%{right:.3rem}
+            100%{right:-250px}
+        } 
+    </style>
 </head>
 <body>
     <div class="container" id='container'>
@@ -39,14 +63,14 @@
             </div>
         </div>
         <div class="right" id='right'>
-            <p class="sing-up">Sing up.</p>
-            <form action="" method="POST">
-                <input type="text" placeholder="User" required>
-                <input type="email" placeholder="E-mail" required>
-                <input type="password" placeholder="Password" required>
-                <input type="submit" value="Sing up">
+            <p class="sing-up">SingUp.</p>
+            <form action="/register" method="POST">
+                <input type="text" name="username" placeholder="User" required>
+                <input type="email" name="email" placeholder="E-mail"  required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="SingUp">
             </form>
-            <p class="log-in">Already hace an account, <a href="#"><span>Log in </span></a>.</p>
+            <p class="log-in">Already hace an account, <a href="/login" target="_self">Log in</a>.</p>
         </div>
     </div>
 </body>
